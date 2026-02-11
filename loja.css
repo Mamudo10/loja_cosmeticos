@@ -1,0 +1,397 @@
+html, body {
+    font-family: Arial, sans-serif; /* tipo de letra arial*/
+    margin: 0; /*remove margem*/
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.oi {
+    color: #333; /*cor de texto*/
+}
+
+.header {
+    background-color: #f6c1d1; /*cor de fundo*/
+    padding: 20px 40px; /*espacamento interno*/
+    text-align: center; /*alinhar texto*/
+    color: #333; /*cor de texto*/
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*alinhar itens*/
+}
+
+.topo h1 {
+    font-size: 24px; /*tamanho de fonte*/
+    font-weight: bold; /*grossura de fonte*/
+}
+
+.topo nav a {
+    color: #333; /*cor de texto*/
+    text-decoration: none; /*decoracao de texto*/
+    margin-left: 20px; /*margem a esquerda*/
+    font-size: 15px; /*tamanho de fonte*/
+}
+
+.topo nav a:hover {
+    text-decoration: underline; /*decoracao de texto*/
+}
+
+.mensagem {
+    text-align: center; /*alinhar texto*/
+    margin: 40px 0; /*margem*/
+}
+
+.mensagem h2 {
+    font-size: 28px; /*tamanho de fonte*/
+    padding: 8px 15px; /*espacamento interno*/
+    background: #333; /*cor de fundo*/
+    display: inline-block; /*controla como os elementos se organizam na pagina, criando varias botoes*/
+    border-radius: 20px; /*borda curva*/
+}
+
+.mensagem p {
+    font-size: 16px; /*tamanho de fonte*/
+    opacity: 0.9; /*opacidade*/
+}
+
+.categorias {
+    display: flex; /*controla como os elementos se organizam na pagina*/
+    justify-content: center;
+    gap: 10px;
+}
+
+.categorias a {
+    background: #e8a9bf; /*cor de fundo*/
+    color: #333; /*cor de letra*/
+    text-decoration: none;
+    padding: 10px; /*espacamento interno*/
+    border-radius: 12px; /*borda curva*/
+    font-size: 10px; /*tamanho de fonte*/
+    margin: 0;
+    
+}
+
+.categorias a:hover {
+    background: #7a3c7f; /*cor de fundo*/
+    color: pink; /*atribue cor*/
+}
+
+.frase {
+    font-weight: bold;
+}
+
+.a {
+    margin: 10px; /*margem*/
+    padding: 10px; /*espacamento interno*/
+    list-style: none; 
+    text-decoration: none;
+    color: #333 ; /*atribue cor*/
+    font-weight: bold;
+}
+
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.produto {
+    position: relative;
+    background-color: #f6b7cc; /*cor de fundo do card*/
+    border-radius: 12px; /* arredonda os cantos do card*/
+    padding: 8px; /* espaco interno entro os conteudos e a borda*/
+    text-align: center; /* centralixa o texto*/
+    width: 90%; /*largura fixa do card*/
+    min-height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*sombra leve */
+}
+
+.produto img {
+    width: 100%; /*define o tamanho da imagem*/
+    max-width: 90px;
+    height: auto;
+    margin: 0;
+    margin-bottom: 6px;
+    display: block;
+    border-radius: 10px; /* arredonda os cantos da imagem*/
+}
+
+.produto h3 {
+    margin: 6px 0; /* espaco acima e abaixo do titulo*/
+    font-size: 14px; /* tamanho da letra do nome do produto*/
+}
+
+.preco {
+   font-size: 13px; /* tamanho da fonte do preco*/
+   font-weight: bold; /* deixa o texto em negrito*/
+   color: #5a2a5e; /*cor do texto*/
+   margin-bottom: 7px; /* espaco abaixo do preco*/
+}
+
+.produto button {
+    background: #5a2a5e; /* cor do fundo do botao*/
+    width: 100%;
+    color: pink; /* cor do texto do botao*/
+    border: none; /* remover a borda do botao*/
+    padding: 8px; /* espaco interno do botao (altura e largura)*/
+    border-radius: 10px; /* arredonda os cantos do botao*/
+    cursor: pointer; /* muda o cursor para maozinha*/
+}
+
+.produto button:hover {
+    background: pink; /* muda cor do fundo do botao quando mouse passar por cima do botao*/
+    color: #333;
+}
+
+.produto:hover {
+    background: #7a3c7f;
+}
+
+.disponivel {
+    background-color: #2e7d32;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.pouco {
+    background-color: #f57c00;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.esgotado {
+    background-color: #c62828;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+main {
+    background-color: #5a2a5e; /*cor do fundo do main*/
+    padding: 15px; /* epacamento interno*/
+}
+
+h2 {
+    color: pink;
+}
+
+h1 {
+    color: pink;
+}
+.footer {
+    background-color: #f6c1d1; /* cor de fundo de rodape*/
+    padding: 30px; /* espaco interno entro o conteudo e a borda*/
+    flex-wrap: wrap; /* Queba as colunas para baixo em telas peuenas*/
+    justify-content: space-around; /* faz as colunas tivar espaco igual*/
+    display: flex; /* ativa o flexbox para organizar os itens*/
+}
+
+.footer-col {
+    width: 100%; /*define a largura de cada coluna*/
+}
+
+
+.footer-col h3 {
+    color: #5a2a5e; /*cor do titulo*/
+    margin-bottom: 10px; /*espaco debaixo do titulo*/
+}
+
+.footer-col p,
+.footer-col li {
+    color: #333; /*cor de texto*/
+    font-size: 14px; /* tamanho de letra*/
+}
+
+.footer-col ul {
+    list-style: none; /* remove as bolinhas da lista*/
+    padding: 0; /*remove o espacamento padrao do navegador*/
+}
+
+.footer-col ul li {
+    margin-bottom: 5px; /* espaco entre cada item da lista*/
+}
+
+.footer-col a {
+    text-decoration: none; /* remove o sublinhado*/
+    color: #333; /* cor do link*/
+}
+
+.footer-col a:hover {
+    color: #5a2a5e; /* muda a cor quando o mouse passa por cima*/
+}
+
+.copyright {
+    background-color: #e8a9bf; /* cor de fundo de copyright*/
+    text-align: center; /* centraliza o texto*/
+    padding: 10px; /* espaco interno*/
+    font-size: 13px; /* tamanho texto*/
+}
+
+.promo {
+    background-color: #e53935;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.carrinha {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+}
+/* Para pagina contatos */
+
+.contactos {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-con, .formulario {
+    background: #f6b7cc;
+    padding: 10px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 260px;
+
+}
+
+.info-con h2, .formulario h2 {
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.formulario textarea {
+    height: 90px;
+    resize: none;
+}
+
+.formulario button {
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.formulario button:hover {
+    background: #7a3c7f;
+}
+
+.menu-resp {
+    width: 30px;
+    height: 22px;
+    display: none;
+    font-size: 28px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.menu-resp span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    border-radius: 2px;
+
+}
+
+.categ-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.categ-menu a {
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+
+
+
+/*CSS PARA PAGINA SOBRE*/
+.sobre, .valores {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #f6b7cc;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.sobre h2, .valores h2 { 
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    line-height: 1.6;
+}
+
+.valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valores li {
+    background: white;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.voltar {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: #f6c1d1;
+    font-weight: bold;
+}
+/*FIM DE CSS DA PAGINA SOBRE*/
+
+
