@@ -209,6 +209,10 @@ h1 {
     justify-content: space-around; /* faz as colunas tivar espaco igual*/
     display: flex; /* ativa o flexbox para organizar os itens*/
 }
+.footer .marca {
+  font-weight: bold;
+  color: #6a1b4d;
+}
 
 .footer-col {
     width: 100%; /*define a largura de cada coluna*/
@@ -393,5 +397,6 @@ h1 {
     font-weight: bold;
 }
 /*FIM DE CSS DA PAGINA SOBRE*/
+
 
 
